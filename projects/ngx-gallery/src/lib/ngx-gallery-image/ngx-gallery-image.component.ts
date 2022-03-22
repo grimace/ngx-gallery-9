@@ -30,6 +30,7 @@ export class NgxGalleryImageComponent implements OnInit, OnChanges {
   @Input() descriptions: string[];
   @Input() showDescription: boolean;
   @Input() bullets: boolean;
+  @Input() timeout = 1000;
 
   @Output() onClick = new EventEmitter();
   @Output() onActiveChange = new EventEmitter();
@@ -174,7 +175,7 @@ export class NgxGalleryImageComponent implements OnInit, OnChanges {
 
   setChangeTimeout() {
       this.canChangeImage = false;
-      let timeout = 1000;
+      let timeout = this.timeout;
 
       if (this.animation === NgxGalleryAnimation.Slide
           || this.animation === NgxGalleryAnimation.Fade) {
