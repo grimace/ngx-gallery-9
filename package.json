@@ -1,17 +1,18 @@
 {
   "name": "ngx-gallery-9",
-  "version": "1.0.6",
+  "version": "1.0.0",
   "license": "MIT",
   "repository": {
-    "url": "https://github.com/SaeedSpate/ngx-gallery-9"
+    "url": "github://github.com/grimace/ngx-gallery-9"
   },
   "bugs": {
-    "email": "yazdani.zs@gmail.com",
-    "url": "https://github.com/SaeedSpate/ngx-gallery-9/issues"
+    "email": "maceghost@gmail.com",
+    "url": "github://github.com/grimace/ngx-gallery-9/issues"
   },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "prepare": "npm run build",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
